@@ -3,14 +3,14 @@ class FizzBuzz:
     def __init__(self):
         pass
 
-    def fizzbuzz(self, integer):
+    def fizzbuzz(self, integer: int) -> str:
         if integer % 15 == 0: return "FizzBuzz"
-        if integer % 3 == 0:  return "Fizz"
-        if integer % 5 == 0:  return "Buzz"
+        if integer %  3 == 0: return "Fizz"
+        if integer %  5 == 0: return "Buzz"
         return str(integer)
 
-    def print_it(self):
-        for i in range(0, 101):
+    def print_it(self) -> None:
+        for i in range(1, 101):
             print(self.fizzbuzz(i))
 
 
